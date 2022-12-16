@@ -18,7 +18,7 @@ public class UserRestController {
     private final UserService userService;
 
     // 유저 정보 수정 ( 성별 or 온도 민감도)
-    @PostMapping("/user/{userId}")
+    @PutMapping("/user/{userId}")
     public ResponseEntity<String> update(@RequestBody UserUpdateRequestDto userUpdateRequestDto,
                                          @PathVariable Long userId) {
 
